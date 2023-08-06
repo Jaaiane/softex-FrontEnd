@@ -1,21 +1,24 @@
-function calculadora (n1 , n2 , op) {
-    if (op == 1) {
-        return n1 + n2;
+function informacaoUser () {
+    let nome , nascimento
+
+    while (true) {
+        nome = prompt("digite seu nome completo:")
+        nascimento = parseInt(prompt("digite seu de nascimento entre 1922 e 2022:"))
+        
+        if (!Number.isInteger(nascimento) || nascimento < 1922 || nascimento > 2022)
+        {
+            alert("Ano de nascimento inválido. Por favor, Digite um valor numérico entre 1922 e 2021.")
+        } else {
+            break
+        }
     }
-    else if (op == 2) {
-            return n1 - n2;
-        }
-        else if (op == 3) {
-            return n1 * n2;
-        }
-        else if (op == 4) {
-            return n1 / n2;
-        }
-        else {
-            return 0;
-        }
+
+    const anoAtual = 2022
+  const idade = anoAtual - nascimento
+
+  return { nome, idade }
 }
 
-let calc = calculadora(20,4,4)
+const { nome, idade } = informacaoUser()
+alert(`Olá, ${nome}! Em 2022, você completou ou completará ${idade} anos.`)
 
-console.log(calc) 
