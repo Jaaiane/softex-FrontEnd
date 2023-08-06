@@ -25,6 +25,6 @@ console.log("---------------------------")
 const pilha = [3, 7, 9, 1, 0]
 
 while (pilha.length > 0) {
-  const Remoção = pilha.shift()
+  const Remoção = pilha.pop()
   console.log("Removido da pilha:", Remoção)
 }
