@@ -29,17 +29,17 @@ function printPeople(Person) {
     }
 }
 
-let familyTree = createPersonNode("Ana", 34)
+let family = createPersonNode("Ana", 34)
 
-familyTree = addPerson(familyTree, "Paulo", 25)
-familyTree = addPerson(familyTree, "Maria", 31)
+family = addPerson(family, "Paulo", 25)
+family = addPerson(family, "Maria", 31)
 
-let Paulo = familyTree.child
+let Paulo = family.child
 addPerson(Paulo, "Felipe", 9)
 addPerson(Paulo, "Marcos", 7)
 
 let Maria = Paulo.child
 addPerson(Maria, "José", 3)
 
-printPeople(familyTree)
+printPeople(family)
 
