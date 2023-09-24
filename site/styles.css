@@ -1,0 +1,361 @@
+:root {
+    --primary: #DD946F;
+    --secondary: #261E54;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: arial;
+}
+
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.logo_principal {
+    width: 150px;
+    height: 150px;
+}
+
+.container_esquerda {
+    max-width: 250px;
+    height: 611px;
+    background-color: #261E5A;
+}
+
+.espaco_logo {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    background-color: #2e2469;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo_menu {
+    font-size: 19px;
+    padding: 30px;
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+li {
+    margin-bottom: 30px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(238, 193, 134);
+}
+
+.informacoes_adicionais {
+    font-size: 18px;
+    padding: 30px;
+}
+
+.feedback {
+    margin-bottom: 40px;
+}
+
+.redes_sociais {
+    width: 26px;
+    height: 27px;
+    cursor: pointer;
+}
+
+.container_direita {
+    width: 100%;
+}
+
+.marco_zero {
+    z-index: 0;
+    position: absolute;
+    height: 100vh;
+    min-width: 88.9%;
+    max-width: 100%;
+}
+
+.titulo {
+    z-index: 1;
+    font-size: 65px;
+    color: #ffffff;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 3%;
+}
+
+.sub_titulo {
+    z-index: 2;
+    position: absolute;
+    margin-top: 440px;
+    font-size: 23px;
+    margin-left: 5%;
+    color: #ffffff;
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: lightcoral;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* Localização */
+.localizacao {
+    margin: 50px;
+}
+
+.localizacao h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: var(--secondary);
+}
+
+.localizacao p {
+    font-size: 18px;
+}
+
+/* Visita ao Marco Zero */
+.visita-marcoZero {
+    margin: 50px;
+}
+
+.visita-marcoZero h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: var(--secondary);
+}
+
+.visita-marcoZero p {
+    font-size: 17px;
+    line-height: 1.3;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.visita-marcoZero ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.visita-marcoZero li {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.visita-marcoZero li strong {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+/* Lugares a serem visitados */
+.referencia {
+    text-align: center;
+    background-color: #d1d1f5;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.background {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 64px 32px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+}
+
+.cards article {
+    max-width: 320px;
+    height: auto;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    border-bottom: 16px;
+}
+
+.cards article a {
+    display: inline-flex;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.cards article h2 {
+    margin: 0 0 10px 0;
+    font-size: 19px;
+    color: var(--secondary);
+    transition: color 0.3s ease-out;
+}
+
+.cards article img {
+    max-width: 100%;
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+.texto-cards {
+    padding: 20px;
+    height: 300px;
+    width: 330px;
+    background: #F5F5DC;
+}
+
+.texto-cards p {
+    font-size: 17px;
+}
+
+.cards figure {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.cards figure img {
+    height: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+.cards article:hover img {
+    transform: scale(1.2);
+}
+
+/* Feedback do site */
+
+.feedback-site {
+    background-color: #e4e4f5;
+    padding: 20px;
+}
+
+.feedback-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé do site */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    width: 190px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #ff8c00;
+}
+
+.footer-redes-sociais a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-info {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
