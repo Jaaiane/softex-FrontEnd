@@ -1,5 +1,5 @@
 // 1- Função sem Parâmetros
-function Cumprimentação () {
+function Cumprimentacao () {
     console.log("Sejam Bem-Vindos")
 }
 
