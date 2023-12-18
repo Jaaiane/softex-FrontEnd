@@ -1,0 +1,23 @@
+.lista-de-tarefas {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.tarefa-item {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.remover-botao {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.input-tarefa {
+  margin-bottom: 10px;
+}
+
+.botao-adicionar {
+  cursor: pointer;
+}
